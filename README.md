@@ -22,6 +22,11 @@ Move to the new ghost directory, and install Ghost (production dependencies only
 
 ```cd /var/www/ghost && npm install --production```
 
+### Starting Ghost
+
+To start Ghost (production environment), run
+
+```npm start --production```
 
 ___
 #### _Más Información_
