@@ -22,6 +22,16 @@ Move to the new ghost directory, and install Ghost (production dependencies only
 
 ```cd /var/www/ghost && npm install --production```
 
+Editar _config.js_:
+
+Linea 14
+Para pruebas locales: `http://localhost:2368`
+
+```
+
+```
+
+
 ### Starting Ghost
 
 To start Ghost (production environment), run
