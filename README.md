@@ -4,6 +4,23 @@
 
 ## Blog 
 
+Ref: http://support.ghost.org/installing-ghost-linux/
+
+### Installing Ghost 
+
+Grab the latest version of Ghost from Ghost.org:
+
+```curl -L https://ghost.org/zip/ghost-latest.zip -o ghost.zip```
+
+Unzip Ghost into the folder `/var/www/ghost`(recommended install location):
+
+```unzip -uo ghost.zip -d /var/www/ghost```
+
+Note: You may additionally need to create the `/var/www/` directory with the command mkdir `/var/www/`, or install the unzip package following the instructions for your linux distro)
+
+Move to the new ghost directory, and install Ghost (production dependencies only):
+
+```cd /var/www/ghost && npm install --production```
 
 
 ___
