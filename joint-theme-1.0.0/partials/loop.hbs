@@ -1,0 +1,66 @@
+{{! Previous/next page links - only displayed on page 2+ }}
+<div class="extra-pagination inner">
+    {{pagination}}
+</div>
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+
+<div class="main-header post-head postImg" style="background-image: url({{#if image}}{{image}}{{else}}/assets/images/defaultPost.jpg{{/if}})">
+
+    <div class="row info-post">
+        <div class="headerPost">
+            {{#if author.image}}
+                <div class="avatar">
+                    <img class="imgAvatar" src="{{author.image}}">
+                </div>
+            {{/if}}
+
+            <span class="headerPostAuthor">
+                <a href="{{url}}">{{author.name}}</a>
+            </span>
+        </div>
+
+        <div class="authorSocial">
+            {{#if author.facebook}}
+                <div class="iconSocialAuthor">
+                    <a href="https://www.facebook.com/{{author.facebook}}">
+                        <img class="imgAvatar" src="/assets/images/icons/facebook.png">
+                    </a>
+                </div>    
+            {{/if}}
+            {{#if author.twitter}}
+                <div class="iconSocialAuthor">
+                    <a href="https://twitter.com/{{author.twitter}}">
+                        <img class="imgAvatar" src="/assets/images/icons/twitter.png">
+                    </a>
+                </div>    
+            {{/if}}
+            {{#if author.website}}
+                <div class="iconSocialAuthor">
+                    <a href="{{author.website}}">
+                        <img class="imgAvatar" src="/assets/images/icons/github.png">
+                    </a>
+                </div>    
+            {{/if}}         
+        </div>
+    </div>
+</div>
+
+<div class="post-body">
+    <div class="post-tittle">
+        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+        {{tags prefix=" on "}}
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+    </div>
+    
+    <div class="post-content post-content-p">
+        <section class="post-excerpt">
+            <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;Continuar leyendo</a></p>
+        </section>
+    </div>
+</div>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}
