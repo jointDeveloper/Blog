@@ -2,30 +2,23 @@
 
 # Comunidad jointDeveloper
 
-## Blog 
+## Blog
 
 Ref: http://support.ghost.org/installing-ghost-linux/
 
-### Installing Ghost 
+### Instalar Ghost
 
-Grab the latest version of Ghost from Ghost.org:
-
+* Descargar la última versión de Ghost desde Ghost.org:
 ```curl -L https://ghost.org/zip/ghost-latest.zip -o ghost.zip```
 
-Unzip Ghost into the folder `/var/www/ghost`(recommended install location):
-
+* Descomprimir Ghost dentro del directorio `/var/www/ghost`(Directorio recomendado):
 ```unzip -uo ghost.zip -d /var/www/ghost```
 
-Note: You may additionally need to create the `/var/www/` directory with the command mkdir `/var/www/`, or install the unzip package following the instructions for your linux distro)
-
-Move to the new ghost directory, and install Ghost (production dependencies only):
-
+* Move to the new ghost directory, and install Ghost (production dependencies only):
 ```cd /var/www/ghost && npm install --production```
 
-Editar _config.js_:
-
-Linea 14
-Para pruebas locales: `http://localhost:2368`
+* Editar `config.js`:
+Linea 14 Para pruebas locales: `http://localhost:2368`
 
 ```
 
