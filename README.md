@@ -14,7 +14,7 @@ Ref: http://support.ghost.org/installing-ghost-linux/
 * Descomprimir Ghost dentro del directorio `/var/www/ghost`(Directorio recomendado):
 ```unzip -uo ghost.zip -d /var/www/ghost```
 
-* Move to the new ghost directory, and install Ghost (production dependencies only):
+* Ve al nuevo directorio e instala Ghost (dependencias de producción unicamente):
 ```cd /var/www/ghost && npm install --production```
 
 * Editar `config.js`:
@@ -27,9 +27,16 @@ Linea 14 Para pruebas locales: `http://localhost:2368`
 
 ### Starting Ghost
 
-To start Ghost (production environment), run
+Para iniciar Ghost (entorno de producción), ejecuta
 
 ```npm start --production```
+
+
+### Instalación del Tema
+
+* Descomprimir el tema en la carpeta "content/themes" de la instalación de Ghost.
+
+* Ve al administrador de Ghost, y en "settings/general/themes" selecciona joint-theme
 
 ___
 #### _Más Información_
