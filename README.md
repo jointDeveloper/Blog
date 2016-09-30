@@ -2,27 +2,38 @@
 
 # Comunidad jointDeveloper
 
+## Dependencias
+
+npm (https://www.npmjs.com)
+```
+(sudo) apt-get install npm
+```
+
 ## Blog
 
-Ref: http://support.ghost.org/installing-ghost-linux/
+Ref:
+* http://support.ghost.org/installing-ghost-linux/
+* [nginx](https://www.digitalocean.com/community/tutorials/how-to-create-a-blog-with-ghost-and-nginx-on-ubuntu-14-04)
 
 ### Instalar Ghost
 
 * Descargar la última versión de Ghost desde Ghost.org:
-```curl -L https://ghost.org/zip/ghost-latest.zip -o ghost.zip```
+```
+curl -L https://ghost.org/zip/ghost-latest.zip -o ghost.zip
+```
 
 * Descomprimir Ghost dentro del directorio `/var/www/ghost`(Directorio recomendado):
-```unzip -uo ghost.zip -d /var/www/ghost```
+```
+unzip -uo ghost.zip -d /var/www/ghost
+```
 
 * Ve al nuevo directorio e instala Ghost (dependencias de producción unicamente):
-```cd /var/www/ghost && npm install --production```
+```
+cd /var/www/ghost && npm install --production
+```
 
 * Editar `config.js`:
 Linea 14 Para pruebas locales: `http://localhost:2368`
-
-```
-
-```
 
 
 ### Starting Ghost
