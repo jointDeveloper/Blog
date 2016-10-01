@@ -2,7 +2,7 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The big featured header }}
-<header class="main-header" style="background-image: url({{#if @blog.cover}}{{@blog.cover}}{{else}}/assets/images/defaultCover.jpg{{/if}})">
+<header class="main-header" style="background-image: url({{#if @blog.cover}}{{@blog.cover}}{{else}}./assets/images/defaultCover.jpg{{/if}})">
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{@blog.title}}</h1>
@@ -10,17 +10,20 @@
             <div>
                 <div class="iconSocialHome">
                     <a href="https://www.facebook.com/jointDeveloper/?fref=ts">
-                        <img class="imgAvatar" src="/assets/images/icons/facebook.png">
+                        <i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i>
+                        <!-- <img class="imgAvatar imgFacebook" src="./assets/images/icons/facebook.png"> -->
                     </a>
                 </div>
                 <div class="iconSocialHome">
                     <a href="https://twitter.com/jointdev">
-                        <img class="imgAvatar" src="/assets/images/icons/twitter.png">
+                        <i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i>
+			<!-- <img class="imgAvatar imgTwitter" src="./assets/images/icons/twitter.png"> -->
                     </a>
                 </div>
                 <div class="iconSocialHome">
                     <a href="https://github.com/jointDeveloper">
-                        <img class="imgAvatar" src="/assets/images/icons/github.png">
+                        <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+			<!-- <img class="imgAvatar imgGithub" src="./assets/images/icons/github.png"> -->
                     </a>
                 </div>     
             </div>

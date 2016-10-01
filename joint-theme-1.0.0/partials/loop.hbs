@@ -6,7 +6,7 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 
-<div class="main-header post-head postImg" style="background-image: url({{#if image}}{{image}}{{else}}/assets/images/defaultPost.jpg{{/if}})">
+<div class="main-header post-head postImg">
 
     <div class="row info-post">
         <div class="headerPost">
@@ -25,21 +25,21 @@
             {{#if author.facebook}}
                 <div class="iconSocialAuthor">
                     <a href="https://www.facebook.com/{{author.facebook}}">
-                        <img class="imgAvatar" src="/assets/images/icons/facebook.png">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>    
             {{/if}}
             {{#if author.twitter}}
                 <div class="iconSocialAuthor">
                     <a href="https://twitter.com/{{author.twitter}}">
-                        <img class="imgAvatar" src="/assets/images/icons/twitter.png">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>    
             {{/if}}
             {{#if author.website}}
                 <div class="iconSocialAuthor">
                     <a href="{{author.website}}">
-                        <img class="imgAvatar" src="/assets/images/icons/github.png">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>    
             {{/if}}         

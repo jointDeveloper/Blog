@@ -1,3 +1,7 @@
+a > i {
+  color: white;
+}
+
 .pi-header{
   font-family: 'Lato', sans-serif;
 }
@@ -38,6 +42,8 @@ ul.topnav {
   float: left;
   margin-right: 20px;
   margin-top: 2px;
+  background-image: url("../images/icons/robot.png");
+  background-repeat: no-repeat;
 }
 
 ul.topnav li {
@@ -150,6 +156,11 @@ ul.topnav ul.right {
     padding-left: 200px !important;
 }
 
+.post-head {
+   background-image: url("../images/defaultPost.jpg");
+   background-size: 100% auto;
+}
+
 .text-center{
   text-align: center;
 }
@@ -234,7 +245,7 @@ ul.topnav ul.right {
   bottom: 15px;
   z-index: 10;
   color: #fff;
-  width: 100%;
+  width: 98%;
 }
 
 .avatar{
@@ -276,7 +287,6 @@ ul.topnav ul.right {
 }
 
 .iconSocialAuthor{
-  border-radius: 50%;
   overflow: hidden;
   width: 30px;
   height: 30px;
@@ -292,11 +302,15 @@ ul.topnav ul.right {
 }
 
 .iconSocialHome{
-  border-radius: 50%;
   overflow: hidden;
   width: 40px;
   height: 40px;
   margin-top: 10px;
   margin-right: 20px;
   display: inline-block;
+width: 10%;
+height: 100px;
+margin-top: 10px;
+margin-right: 20px;
+display: inline-block;
 }
