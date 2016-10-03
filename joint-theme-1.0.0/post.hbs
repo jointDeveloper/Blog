@@ -6,7 +6,7 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head">
+<header class="main-header post-head" style="background-image: url({{#if image}}{{image}}{{else}}{{asset "/images/defaultPost.jpg"}}{{/if}})">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         <a class="menu-button back-button icon-arrow-left" href="{{@blog.url}}">Inicio</a>
     </nav>
@@ -132,7 +132,7 @@
 
 <aside class="read-next">
     {{#next_post}}
-    <a class="read-next-story" style="background-image: url({{#if image}}{{image}}{{else}}../assets/images/defaultPost.jpg{{/if}})" href="{{url}}">
+    <a class="read-next-story" style="background-image: url({{#if image}}{{image}}{{else}}{{asset "/images/defaultPost.jpg"}}{{/if}})" href="{{url}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
@@ -140,7 +140,7 @@
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="read-next-story prev" style="background-image: url({{#if image}}{{image}}{{else}}../assets/images/defaultPost.jpg{{/if}})" href="{{url}}">
+    <a class="read-next-story prev" style="background-image: url({{#if image}}{{image}}{{else}}{{asset "/images/defaultPost.jpg"}}{{/if}})" href="{{url}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
