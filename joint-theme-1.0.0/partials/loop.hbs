@@ -6,7 +6,7 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 
-<div class="main-header post-head postImg">
+<div class="main-header post-head postImg" style="background-image: url({{#if image}}{{image}}{{else}}{{asset "/images/defaultPost.jpg"}}{{/if}});">
 
     <div class="row info-post">
         <div class="headerPost">
@@ -27,22 +27,22 @@
                     <a href="https://www.facebook.com/{{author.facebook}}">
                         <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
                     </a>
-                </div>    
+                </div>
             {{/if}}
             {{#if author.twitter}}
                 <div class="iconSocialAuthor">
                     <a href="https://twitter.com/{{author.twitter}}">
                         <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
                     </a>
-                </div>    
+                </div>
             {{/if}}
             {{#if author.website}}
                 <div class="iconSocialAuthor">
                     <a href="{{author.website}}">
                         <i class="fa fa-github fa-2x" aria-hidden="true"></i>
                     </a>
-                </div>    
-            {{/if}}         
+                </div>
+            {{/if}}
         </div>
     </div>
 </div>
@@ -53,7 +53,7 @@
         {{tags prefix=" on "}}
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
     </div>
-    
+
     <div class="post-content post-content-p">
         <section class="post-excerpt">
             <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;Continuar leyendo</a></p>

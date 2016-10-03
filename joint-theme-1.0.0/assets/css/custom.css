@@ -1,3 +1,9 @@
+html, body, nav, h1, h2, h3, h4, h5, p, span {
+  font-family: 'Arima Madurai', cursive;
+}
+
+nav { font-size: 17px; }
+
 a > i {
   color: white;
 }
@@ -14,11 +20,23 @@ a > i {
   text-align: left;
 }
 
+.logoImgNav {
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+  float: left;
+  margin-top: 2px;
+  background-image: url("../images/icons/robot.png");
+  background-repeat: no-repeat;
+}
+
 #logo-nav, #logo-nav-responsive {
   font-family: 'Linden Hill', serif;
   font-size: 35px;
   font-weight: bold;
   border-bottom: 0;
+  padding: 0px;
 }
 
 ul.topnav {
@@ -27,44 +45,42 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-weight: bold;
   background-color: #444;
   position: fixed;
   top: 0px;
   z-index: 9999;
-  height: 60px;
-}
-
-.logoImgNav{
-  overflow: hidden;
-  width: 50px;
-  height: 50px;
-  padding-top: 5px;
-  float: left;
-  margin-right: 20px;
-  margin-top: 2px;
-  background-image: url("../images/icons/robot.png");
-  background-repeat: no-repeat;
+  height: 57px;
 }
 
 ul.topnav li {
   float: left;
-  margin: 0px !important;
 }
 
 ul.topnav li a {
   display: block;
   color: #fff;
   text-align: center;
-  padding: 14px 15px;
+  padding: 6px 14px;
   text-decoration: none;
 }
-a {
-  color: black;
+
+a { color: #000; }
+a, a:active, a:focus {
+  outline: none;
+  text-decoration: none;
 }
+a i {
+  color: #fff;
+  bottom: 10px;
+}
+
+a i:hover { opacity: 0.7; }
 
 ul.topnav li a:hover:not(.active) {
   color: #f06292;
   font-weight: bold;
+  padding-bottom: 2px;
   border-bottom: 2px solid #f06292;
 }
 
@@ -72,6 +88,7 @@ ul.topnav li a.active {
   color: #f06292;
   background-color: #444;
   font-weight: bold;
+  padding-bottom: 2px;
   border-bottom: 2px solid #f06292;
 }
 
@@ -79,6 +96,9 @@ ul.topnav ul.right {
   float: right;
   list-style-type: none;
 }
+
+ul.topnav li { float: right; }
+
 
 .style-title {
   font-family: 'Linden Hill', serif;
@@ -154,11 +174,6 @@ ul.topnav ul.right {
     padding-top: 84px;
     padding-bottom: 84px;
     padding-left: 200px !important;
-}
-
-.post-head {
-   background-image: url("../images/defaultPost.jpg");
-   background-size: 100% auto;
 }
 
 .text-center{
@@ -308,9 +323,13 @@ ul.topnav ul.right {
   margin-top: 10px;
   margin-right: 20px;
   display: inline-block;
-width: 10%;
-height: 100px;
-margin-top: 10px;
-margin-right: 20px;
-display: inline-block;
+  width: 10%;
+  height: 100px;
+  margin-top: 10px;
+  margin-right: 20px;
+  display: inline-block;
 }
+
+.site-wrapper { padding-top: 57px; }
+
+.scroll-down { bottom: 60px; }

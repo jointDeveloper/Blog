@@ -6,7 +6,7 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head">
+<header class="main-header post-head" style="background-image: url({{#if image}}{{image}}{{else}}{{asset "/images/defaultPost.jpg"}}{{/if}});">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         <a class="menu-button back-button icon-arrow-left" href="{{@blog.url}}">Inicio</a>
     </nav>
@@ -32,14 +32,14 @@
 
                         <!-- <img class="imgAvatar" src="../assets/images/icons/facebook.png"> -->
                     </a>
-                </div>    
+                </div>
             {{/if}}
             {{#if twitter}}
                 <div class="iconSocialAuthor">
                     <a href="https://twitter.com/{{twitter}}">
                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
                     </a>
-                </div>    
+                </div>
             {{/if}}
             {{#if website}}
                 <div class="iconSocialAuthor">
@@ -47,8 +47,8 @@
                         <i class="fa fa-github fa-2x" aria-hidden="true"></i>
 
                     </a>
-                </div>    
-            {{/if}}         
+                </div>
+            {{/if}}
         </div>
     {{/author}}
 
@@ -115,7 +115,7 @@
             <script type="text/javascript">
                 var disqus_shortname = 'www-jointdeveloper-com'; // required: replace example with your forum shortname
                 var disqus_identifier = '{{post.id}}';
-                 
+
                 /* * * DON'T EDIT BELOW THIS LINE * * */
                 (function() {
                     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -132,7 +132,7 @@
 
 <aside class="read-next">
     {{#next_post}}
-    <a class="read-next-story" style="background-image: url({{#if image}}{{image}}{{else}}../assets/images/defaultPost.jpg{{/if}})" href="{{url}}">
+    <a class="read-next-story" style="background-image: url({{#if image}}{{image}}{{else}}{{asset "/images/defaultPost.jpg"}}{{/if}})" href="{{url}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
@@ -140,7 +140,7 @@
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="read-next-story prev" style="background-image: url({{#if image}}{{image}}{{else}}../assets/images/defaultPost.jpg{{/if}})" href="{{url}}">
+    <a class="read-next-story prev" style="background-image: url({{#if image}}{{image}}{{else}}{{asset "/images/defaultPost.jpg"}}{{/if}})" href="{{url}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
